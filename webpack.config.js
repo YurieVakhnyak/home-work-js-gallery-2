@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, "./src/02-video.js"),
+    main: path.resolve(__dirname, "./src/03-feedback.js"),
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -11,8 +11,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./src/02-video.html"), // template file
+      //   template: path.resolve(__dirname, "./src/01-gallery.html"), // template file
       //   template: path.resolve(__dirname, "./src/02-video.html"), // template file
+      template: path.resolve(__dirname, "./src/03-feedback.html"), // template file
       filename: "index.html", // output file
     }),
   ],
