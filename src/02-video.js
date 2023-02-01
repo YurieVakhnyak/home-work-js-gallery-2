@@ -1,11 +1,3 @@
-// require(["https://player.vimeo.com/api/player.js"], function (Player) {
-//   const iframe = document.querySelector("#vimeo-video");
-//   const player = new Player(iframe);
-
-//   player.on("play", function () {
-//     console.log("played the video!");
-//   });
-// });
 import Player from "@vimeo/player";
 
 const iframe = document.querySelector("#vimeo-player");
@@ -46,6 +38,3 @@ window.onload = function () {
       });
   }
 };
-
-const konjaka = "<h1>Igo-goshechki!!! tpruuu!!! </h1>";
-iframe.insertAdjacentHTML("afterend", konjaka);
